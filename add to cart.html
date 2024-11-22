@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Added to Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fffcfc; /* Light grey background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff; /* White box */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        .message {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #27ae60; /* Green color for success */
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons a {
+            text-decoration: none;
+            padding: 12px 25px;
+            color: #ffffff;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        .continue-shopping {
+            background-color: #3498db; /* Blue button */
+        }
+        .continue-shopping:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="message">Your item has been added to the cart!</h1>
+        <div class="buttons">
+            <a href="shop.html" class="continue-shopping">Continue Shopping</a>
+        </div>
+    </div>
+</body>
+</html>

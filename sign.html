@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furni Fi - Sign Up</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6c5ce7, #81ecec); /* Gradient background */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: #fff; /* White form background */
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Logo and Title */
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #5ce76a; /* Match the gradient theme */
+            margin-bottom: 20px;
+        }
+
+        /* Form Styling */
+        form {
+            width: 100%;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #6c5ce7; /* Highlight focus */
+            box-shadow: 0 0 5px rgba(108, 92, 231, 0.4);
+        }
+
+        /* Button Styling */
+        .btn-signup {
+            width: 100%;
+            background-color: #6c5ce7;
+            color: #fff;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-signup:hover {
+            background-color: #5a4dbf; /* Darker hover color */
+        }
+
+        /* Link for Login */
+        .login-link {
+            margin-top: 15px;
+            display: block;
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .login-link:hover {
+            color: #6c5ce7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Furni Fi</div>
+        <h2>Create an Account</h2>
+        <form>
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit" class="btn-signup">Sign Up</button>
+        </form>
+        <a href="contact.html" class="login-link">Already have an account? Login</a>
+    </div>
+</body>
+</html>
